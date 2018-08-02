@@ -1,0 +1,16 @@
+<style>
+	div{font-size:24px;padding-left:50px;line-height:2em;font-family:courier new;}
+	div input{font-size:24px;line-height:1.5em;font-family:courier new;}
+</style><div>
+<script>
+function doUpper(){
+	v = document.regForm.fname.value;
+	document.regForm.fname.value = v.toUpperCase();
+	document.regForm.fname.style.color = 'red';
+}
+</script>
+
+<form name='regForm' >
+Enter Name : <input type='text' name='fname' id='regFname' value='' placeholder='Enter Upper' onkeyup="javascript:doUpper();"/>
+</form>
+</div>
