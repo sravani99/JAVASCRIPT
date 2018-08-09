@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var mainitems=['jeera rice','pulka','roti','parota'];
+		var curries=['palak paneer','butter masala','alu','kaliya'];
+		var mainitem;
+		var munching;
+		function cb(main,curry)
+		{
+		for(i=0;i<mainitems.length;i++)
+		{
+			if(mainitems==main)
+				break;
+		}
+	   
+	    for(j=0;j<curries.length;j++)
+	     {
+	 	if(curries=curry)
+	 		break;
+	     }
+         if(mainitems==main  &  curries==curry)
+         {
+         	console.log('menu is available');
+         }
+         else{
+         	console.log('it is not available');
+         }
+	}
+	cb('pulka','alu');
+	</script>>
+
+</body>
+</html>
